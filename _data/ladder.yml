@@ -1,0 +1,4 @@
+# The homepage scroll story. media: path to image or .mp4 in /images/ (leave empty for a color placeholder)
+- { label: Nature, line: "Freezing tissue. Floating cells. Complex, messy, alive.", media: "", from: "#1d4d3f", to: "#4f9a6b" }
+- { label: Analog, line: "We rebuild it in the lab: small, controlled, observable.", media: "", from: "#0e3b43", to: "#2a7f86" }
+- { label: Physics, line: "Then strip it to the few ideas that explain it.", media: "", from: "#16213a", to: "#3a4d8f" }

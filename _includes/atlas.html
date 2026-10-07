@@ -1,0 +1,11 @@
+{% assign ps = site.projects | sort: "year" | reverse %}
+<div class="grid">
+{% for p in ps %}{% if include.status == nil or include.status == p.status %}
+{% assign th = site.data.themes | where: "key", p.theme | first %}
+<a class="tile" href="{{ p.url | relative_url }}" data-status="{{ p.status }}" data-theme="{{ p.theme }}" style="--c:{{ th.color }}">
+  <div class="tm">{% include media.html src=p.cover alt=p.title from=p.from to=p.to %}</div>
+  <div class="tb"><span class="chip"><i></i>{{ th.label }}</span> <span class="badge {{ p.status }}">{{ p.status }}</span>
+  <h3>{{ p.title }}</h3><p>{{ p.tagline }}</p></div>
+</a>
+{% endif %}{% endfor %}
+</div>

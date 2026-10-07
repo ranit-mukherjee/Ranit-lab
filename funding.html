@@ -1,0 +1,26 @@
+---
+layout: default
+title: Funding
+permalink: /funding/
+---
+{% assign mn = site.data.grants | map: "start" | sort | first %}
+{% assign mx = site.data.grants | map: "end" | sort | last %}
+{% assign span = mx | minus: mn | plus: 1 %}
+<div class="wrap block"><h1>Funding</h1>
+<p class="mute">Each bar is a grant. Circles are the people on it; white dots are papers it supported.</p>
+<div class="axis">{% for y in (mn..mx) %}<span style="width:{{ 100.0 | divided_by: span }}%">{{ y }}</span>{% endfor %}</div>
+{% for g in site.data.grants %}
+  {% assign glen = g.end | minus: g.start | plus: 1 %}
+  {% assign gl = g.start | minus: mn | times: 100.0 | divided_by: span %}
+  {% assign gw = glen | times: 100.0 | divided_by: span %}
+  {% assign n = 0 %}{% for p in site.data.papers %}{% if p.grants contains g.id %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
+  <div class="grant">
+    <div class="gh"><b>{{ g.title }}</b> <span class="mute">{{ g.sponsor }} · {{ g.start }}–{{ g.end }} · {{ n }} paper{% if n != 1 %}s{% endif %}</span></div>
+    <div class="track"><div class="bar" style="left:{{ gl }}%;width:{{ gw }}%">
+      <div class="avs">{% for mid in g.members %}{% assign m = site.data.team | where: "id", mid | first %}<span class="av" title="{{ m.name }}">{{ m.name | slice: 0 }}</span>{% endfor %}</div>
+      {% for p in site.data.papers %}{% if p.grants contains g.id and p.year >= g.start and p.year <= g.end %}<a class="dot" href="{{ p.link }}" title="{{ p.title }}" style="left:{{ p.year | minus: g.start | plus: 0.5 | times: 100.0 | divided_by: glen }}%"></a>{% endif %}{% endfor %}
+    </div></div>
+    <p>{% for pr in site.projects %}{% if pr.grants contains g.id %}<a class="chip" href="{{ pr.url | relative_url }}">{{ pr.title }}</a> {% endif %}{% endfor %}</p>
+  </div>
+{% endfor %}
+</div>

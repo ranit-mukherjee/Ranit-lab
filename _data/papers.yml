@@ -1,0 +1,16 @@
+# grants: grant ids.  projects: project file names (without .md).  Keep the spacing as shown.
+- year: 2026
+  title: "Sample paper on freezing fronts in packed channels"
+  authors: "Lastname A, Lastname B"
+  venue: "Journal Name"
+  link: "https://doi.org/"
+  featured: true
+  grants: [agency-a]
+  projects: [freezing-granular-channels]
+- year: 2025
+  title: "Sample paper on levitated liquid marbles"
+  authors: "Lastname A, Lastname C"
+  venue: "Conference Name"
+  link: "https://doi.org/"
+  grants: [agency-b]
+  projects: [liquid-marble-bioreactors]

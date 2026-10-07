@@ -1,0 +1,4 @@
+<header><div class="wrap">
+  <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <nav>{% for l in site.data.nav %}<a href="{{ l.url | relative_url }}"{% if page.url contains l.url %} class="on"{% endif %}>{{ l.title }}</a>{% endfor %}</nav>
+</div></header>

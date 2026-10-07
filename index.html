@@ -1,0 +1,40 @@
+---
+layout: default
+title: Home
+---
+<section class="ladder" id="ladder"><div class="stick">
+  {% for l in site.data.ladder %}<div class="layer">{% include media.html src=l.media from=l.from to=l.to %}</div>{% endfor %}
+  <div class="lcap"><div class="wrap">
+    <h1>{{ site.tagline }}</h1>
+    <ol class="steps">{% for l in site.data.ladder %}<li><b>{{ l.label }}</b>{{ l.line }}</li>{% endfor %}</ol>
+  </div></div>
+</div></section>
+
+<section class="wrap block">
+  <h2>Who are you?</h2>
+  <div class="aud">
+    <a href="{{ '/join/' | relative_url }}">I want to join<span>Openings, how to apply, what a day looks like</span></a>
+    <a href="{{ '/members/' | relative_url }}">I'm in the lab<span>Onboarding, equipment, shared resources</span></a>
+    <a href="{{ '/team/#alumni' | relative_url }}">I used to be here<span>Where our alumni went</span></a>
+  </div>
+</section>
+
+<section class="wrap block">
+  <h2>Ongoing projects</h2>
+  {% include atlas.html status="ongoing" %}
+  <p><a href="{{ '/projects/' | relative_url }}">All projects, including past</a></p>
+</section>
+
+<section class="wrap block">
+  <div class="stats">
+    <div><b>{{ site.projects.size }}</b>projects</div>
+    <div><b>{{ site.data.papers.size }}</b>papers</div>
+    <div><b>{{ site.data.grants.size }}</b>grants</div>
+    <div><b>{{ site.data.team.size }}</b>people, past and present</div>
+  </div>
+</section>
+
+<section class="wrap block">
+  <h2>News</h2>
+  {% for n in site.data.news limit:3 %}<p class="item{% if n.important %} imp{% endif %}"><b>{{ n.date }}</b> {{ n.text }}</p>{% endfor %}
+</section>

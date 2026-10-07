@@ -1,0 +1,15 @@
+title: Physicochemical Hydrodynamics of Natural Systems
+tagline: We build engineered analogs of nature, then extract the physics that explains them.
+description: Breaking down complex natural events into tractable units, building their physical analogs, and developing universal models to understand them a little more.
+email: mranit33@vt.edu
+address: Department of Mechanical Engineering, Indian Institute of Technology, xxx, India
+url: ""
+baseurl: "/Ranit-lab"      # project site on GitHub Pages: "/your-repo-name"
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+defaults:
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+exclude: [README.md, Gemfile, Gemfile.lock]
