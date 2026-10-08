@@ -1,3 +1,4 @@
-- { date: "Sep 2026", text: "Sample: new paper accepted. Replace with real news.", important: true }
+# Newest first. image and link are optional.
+- { date: "Sep 2026", text: "Sample: paper accepted in Journal Name.", link: "https://doi.org/" }
 - { date: "Aug 2026", text: "Sample: welcome to our newest PhD student." }
-- { date: "Jun 2026", text: "Sample: field season begins." }
+- { date: "Jun 2026", text: "Sample: field season begins.", image: "" }

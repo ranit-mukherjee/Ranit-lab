@@ -1,0 +1,12 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+<div class="wrap block"><h1>Publications</h1>
+{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% for y in years %}<h2 class="gap">{{ y.name }}</h2>
+  {% for p in y.items %}<div class="pub"><a href="{{ p.link }}">{{ p.title }}</a><br>{{ p.authors }}<br><span class="mute">{{ p.venue }}</span>
+  {% for gid in p.grants %} <span class="chip">{{ gid }}</span>{% endfor %}</div>{% endfor %}
+{% endfor %}</div>
+{% include doodle.html file="books.svg" right="3%" top="60px" w=210 %}

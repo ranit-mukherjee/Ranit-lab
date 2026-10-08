@@ -1,0 +1,11 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+<div class="wrap block"><h1>News</h1>
+{% for n in site.data.news %}<div class="nrow"><span class="nd">{{ n.date }}</span>
+  <span>{% if n.link %}<a href="{{ n.link }}">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}</span>
+  {% if n.image and n.image != "" %}<div class="nimg">{% include media.html src=n.image alt=n.text %}</div>{% endif %}</div>{% endfor %}
+</div>
+{% include doodle.html file="neighbor.svg" right="3%" top="70px" w=200 %}

@@ -1,10 +1,9 @@
-# grants: grant ids.  projects: project file names (without .md).  Keep the spacing as shown.
+# grants: grant ids.  projects: project file names (no .md).  Keep the spacing as shown.
 - year: 2026
   title: "Sample paper on freezing fronts in packed channels"
   authors: "Lastname A, Lastname B"
   venue: "Journal Name"
   link: "https://doi.org/"
-  featured: true
   grants: [agency-a]
   projects: [freezing-granular-channels]
 - year: 2025

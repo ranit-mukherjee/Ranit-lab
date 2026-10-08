@@ -1,0 +1,9 @@
+{% assign ps = site.projects | sort: "year" | reverse %}
+<div class="grid">
+{% for p in ps %}{% if include.status == nil or include.status == p.status %}
+<a class="tile" href="{{ p.url | relative_url }}">
+  <div class="tm">{% include media.html src=p.cover alt=p.title label=p.title %}</div>
+  <div class="tb"><span class="badge {{ p.status }}">{{ p.status }}</span><h3>{{ p.title }}</h3><p>{{ p.tagline }}</p></div>
+</a>
+{% endif %}{% endfor %}
+</div>

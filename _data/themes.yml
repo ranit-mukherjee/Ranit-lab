@@ -1,3 +1,0 @@
-# One color per physics theme. Projects pick one with theme: key
-- { key: phase-change, label: Phase change and stress, color: "#3a8fd9" }
-- { key: soft-interfaces, label: Soft interfaces and waves, color: "#e0568a" }

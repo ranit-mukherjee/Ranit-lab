@@ -2,9 +2,6 @@
 title: Liquid marbles as floating bioreactors
 status: ongoing
 year: 2026
-theme: soft-interfaces
-from: "#3a2a6b"
-to: "#e0568a"
 tagline: Liquid marbles as a proxy for 3D cell culture, floated to avoid solid contact and probed with sound.
 cover: ""
 nature_media: ""
@@ -19,4 +16,4 @@ members: [pi, s2]
 ---
 ## First step
 
-We float marbles to avoid solid surfaces, then use sound to watch how their structure and shape change. Replace this text with your results and methods.
+We float marbles to avoid solid surfaces, then use sound to watch how their structure and shape change. Replace this with your results.

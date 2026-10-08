@@ -1,3 +1,2 @@
-# members: ids from team.yml.  start/end: years.  Linked projects and paper counts are computed automatically.
 - { id: agency-a, title: "Sample Award A", sponsor: "Sample Agency", start: 2023, end: 2027, members: [pi, s1] }
 - { id: agency-b, title: "Sample Award B", sponsor: "Sample Foundation", start: 2025, end: 2028, members: [pi, s2] }

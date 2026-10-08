@@ -1,5 +1,5 @@
-- { title: Projects, url: /projects/ }
-- { title: Funding, url: /funding/ }
-- { title: Papers, url: /papers/ }
-- { title: Team, url: /team/ }
-- { title: Join us, url: /join/ }
+- { title: Home, url: / }
+- { title: People, url: /people/ }
+- { title: Research, url: /research/, match: /projects/ }
+- { title: Publications, url: /publications/ }
+- { title: News, url: /news/ }

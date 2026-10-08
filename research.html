@@ -1,0 +1,19 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+<div class="wrap block"><h1>Research</h1>
+<p class="sub">Each project follows one pattern: a natural system, our engineered analog, and the essential physics.</p>
+<h2 class="gap">Ongoing</h2>{% include tiles.html status="ongoing" %}
+{% assign past = site.projects | where: "status", "past" %}{% if past.size > 0 %}<h2 class="gap">Past</h2>{% include tiles.html status="past" %}{% endif %}
+<h2 class="gap" id="funding">Funding</h2>
+{% for g in site.data.grants %}
+  {% assign n = 0 %}{% for p in site.data.papers %}{% if p.grants contains g.id %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
+  <div class="gr"><div class="yrs">{{ g.start }}&ndash;{{ g.end }}</div>
+    <div><h3>{{ g.title }}</h3><p class="mute">{{ g.sponsor }} · {{ n }} paper{% if n != 1 %}s{% endif %}</p>
+    <p>{% for mid in g.members %}{% assign m = site.data.team | where: "id", mid | first %}<span class="chip">{{ m.name }}</span>{% endfor %}
+    {% for pr in site.projects %}{% if pr.grants contains g.id %}<a class="chip" href="{{ pr.url | relative_url }}">{{ pr.title }}</a>{% endif %}{% endfor %}</p></div></div>
+{% endfor %}
+</div>
+{% include doodle.html file="robot.svg" right="3%" top="90px" w=190 rotate=4 %}

@@ -1,0 +1,25 @@
+---
+layout: default
+title: People
+permalink: /people/
+---
+<div class="wrap block"><h1>People</h1>
+<div class="people">
+{% for p in site.data.team %}{% if p.status != "alumni" %}
+  <div class="person">
+    {% if p.photo %}{% include media.html src=p.photo alt=p.name %}{% else %}<div class="ini">{{ p.name | slice: 0 }}</div>{% endif %}
+    <h3>{% if p.link %}<a href="{{ p.link }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+    <p class="mute">{{ p.role }}</p><p>{{ p.bio }}</p>
+  </div>
+{% endif %}{% endfor %}
+</div>
+<h2 class="gap" id="alumni">Alumni</h2>
+{% for p in site.data.team %}{% if p.status == "alumni" %}<div class="nrow"><span class="nd">{{ p.role }}</span><span><b>{{ p.name }}</b> <span class="mute">{{ p.now }}</span></span></div>{% endif %}{% endfor %}
+<h2 class="gap" id="join">Join us</h2>
+<div class="prose">
+<p><b>Open positions.</b> List which roles are open now (undergraduate, MS, PhD, postdoc, visiting).</p>
+<p><b>What you would work on.</b> We rebuild natural systems as small controlled analogs and extract the essential physics. See <a href="{{ '/research/' | relative_url }}">our research</a>.</p>
+<p><b>How to apply.</b> Email <a href="mailto:{{ site.email }}">{{ site.email }}</a> with your CV, a short summary of past projects, and a paragraph on which project interests you and why. Subject: "Prospective: your name".</p>
+<p><b>Formal admission.</b> Name the program and department students apply through, with deadlines and a link.</p>
+</div></div>
+{% include doodle.html file="elder.svg" right="2%" top="260px" w=230 %}

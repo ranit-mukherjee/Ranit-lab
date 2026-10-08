@@ -2,39 +2,23 @@
 layout: default
 title: Home
 ---
-<section class="ladder" id="ladder"><div class="stick">
-  {% for l in site.data.ladder %}<div class="layer">{% include media.html src=l.media from=l.from to=l.to %}</div>{% endfor %}
-  <div class="lcap"><div class="wrap">
-    <h1>{{ site.tagline }}</h1>
-    <ol class="steps">{% for l in site.data.ladder %}<li><b>{{ l.label }}</b>{{ l.line }}</li>{% endfor %}</ol>
-  </div></div>
-</div></section>
-
-<section class="wrap block">
-  <h2>Who are you?</h2>
-  <div class="aud">
-    <a href="{{ '/join/' | relative_url }}">I want to join<span>Openings, how to apply, what a day looks like</span></a>
-    <a href="{{ '/members/' | relative_url }}">I'm in the lab<span>Onboarding, equipment, shared resources</span></a>
-    <a href="{{ '/team/#alumni' | relative_url }}">I used to be here<span>Where our alumni went</span></a>
-  </div>
+<section class="wrap hero">
+  <div><h1>{{ site.tagline }}</h1><p class="sub">{{ site.description }}</p>
+    <p><a class="btn" href="{{ '/research/' | relative_url }}">Our research</a> <a class="btn alt" href="{{ '/people/#join' | relative_url }}">Join us</a></p></div>
+  <div class="hr">{% include media.html src=site.hero_image alt="Lab hero image" label="Add a hero image or video" %}</div>
 </section>
-
-<section class="wrap block">
-  <h2>Ongoing projects</h2>
-  {% include atlas.html status="ongoing" %}
-  <p><a href="{{ '/projects/' | relative_url }}">All projects, including past</a></p>
-</section>
-
-<section class="wrap block">
-  <div class="stats">
-    <div><b>{{ site.projects.size }}</b>projects</div>
-    <div><b>{{ site.data.papers.size }}</b>papers</div>
-    <div><b>{{ site.data.grants.size }}</b>grants</div>
-    <div><b>{{ site.data.team.size }}</b>people, past and present</div>
-  </div>
-</section>
-
-<section class="wrap block">
-  <h2>News</h2>
-  {% for n in site.data.news limit:3 %}<p class="item{% if n.important %} imp{% endif %}"><b>{{ n.date }}</b> {{ n.text }}</p>{% endfor %}
-</section>
+{% include doodle.html file="cat.svg" left="2%" top="560px" w=150 rotate=-4 %}
+<section class="wrap block"><h2>How we work</h2>
+  <div class="three">
+    <div><span class="num">01</span><h3>Nature</h3><p>We start with a complex natural event: freezing tissue, growing cells.</p></div>
+    <div><span class="num">02</span><h3>Analog</h3><p>We rebuild it small and controlled, so we can watch it closely.</p></div>
+    <div><span class="num">03</span><h3>Physics</h3><p>We strip it to the few ideas that explain it.</p></div>
+  </div></section>
+<section class="wrap block"><h2>Featured research</h2>{% include tiles.html status="ongoing" %}
+  <p><a href="{{ '/research/' | relative_url }}">All research</a></p></section>
+<section class="wrap block"><h2>Latest news</h2>
+  {% for n in site.data.news limit:3 %}<div class="nrow"><span class="nd">{{ n.date }}</span><span>{{ n.text }}</span></div>{% endfor %}
+  <p><a href="{{ '/news/' | relative_url }}">All news</a></p></section>
+<section class="wrap block"><div class="joinband"><h2>Want to join the lab?</h2>
+  <a class="btn light" href="{{ '/people/#join' | relative_url }}">See how</a></div></section>
+{% include doodle.html file="robot.svg" right="3%" top="1180px" w=170 rotate=5 %}
