@@ -15,9 +15,7 @@ main{position:relative;overflow:hidden}
 @media(max-width:700px){.doodle{opacity:.35}}
 /* header */
 header .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-top:24px}
-/* .logo{flex:none;width:112px;height:112px;border-radius:50%;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;font:400 1.8rem/.95 var(--cond);text-transform:uppercase;letter-spacing:.03em}
-.logo span{display:block} */
-.logo{flex:none;width:fit-content;padding:14px 34px 12px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font:400 2rem/1 var(--cond);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;margin-bottom:20px}
+.logo{flex:none;color:var(--ink);text-decoration:none;font:400 2.6rem/1 var(--cond);text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;margin-bottom:18px}
 nav{flex:1;display:flex;justify-content:flex-end;flex-wrap:wrap;border-bottom:2px solid var(--ink);margin-bottom:26px}
 nav a{position:relative;font:400 1.8rem/1 var(--cond);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:9px 26px;border-radius:6px}
 nav a+a::before{content:"";position:absolute;left:0;bottom:-7px;height:12px;border-left:1px solid var(--ink)}
@@ -76,7 +74,7 @@ figcaption{font-size:.85rem;color:var(--mute);margin-top:8px}
 .links p{margin:8px 0}.links b{display:inline-block;min-width:90px;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}
 .item{margin:0 0 14px;padding-left:14px;border-left:3px solid var(--soft)}
 @media(max-width:860px){
-  nav a{padding:8px 12px;font-size:1.4rem}.logo{font-size:1.5rem;white-space:normal;text-align:center;padding:12px 24px 10px}
+  nav a{padding:8px 12px;font-size:1.4rem}.logo{font-size:2rem;white-space:normal}
   .hero,.three,.tri{grid-template-columns:1fr}.nrow,.nrow:has(.nimg),.gr{grid-template-columns:1fr;gap:8px}
   footer .wrap{grid-template-columns:1fr}footer .r{text-align:left}
 }
