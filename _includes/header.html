@@ -1,5 +1,5 @@
 {% assign parts = site.title | split: "-" %}
 <header><div class="wrap">
-  <a class="logo" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}"><span>{{ parts[0] }}</span>{% if parts[1] %}<span>{{ parts[1] }}</span>{% endif %}</a>
+  <a class="logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
   <nav>{% for l in site.data.nav %}{% assign act = false %}{% if l.url == "/" %}{% if page.url == "/" %}{% assign act = true %}{% endif %}{% else %}{% assign m = l.match | default: l.url %}{% if page.url contains l.url or page.url contains m %}{% assign act = true %}{% endif %}{% endif %}<a href="{{ l.url | relative_url }}"{% if act %} class="on"{% endif %}>{{ l.title }}</a>{% endfor %}</nav>
 </div></header>
