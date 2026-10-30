@@ -1,4 +1,4 @@
 # Newest first. image and link are optional.
-- { date: "Sep 2026", text: "Sample: paper accepted in Journal Name.", link: "https://doi.org/" }
-- { date: "Aug 2026", text: "Sample: welcome to our newest PhD student." }
-- { date: "Jun 2026", text: "Sample: field season begins.", image: "" }
+- { date: "Dec 2026", text: "Joining the Mechanical Engineering Department at IIT Kharagpur."}
+#- { date: "Aug 2026", text: "Sample: welcome to our newest PhD student.", link: "https://doi.org/"}
+#- { date: "Jun 2026", text: "Sample: field season begins.", image: "" }
