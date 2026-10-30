@@ -1,5 +1,5 @@
 # status: pi | current | alumni.  id is used by grants and projects.  photo: /images/name.jpg (optional)
-- { id: pi, name: "Your Name", role: "Principal Investigator", status: pi, bio: "Two sentences on your work.", link: "https://example.edu" }
+- { id: pi, name: "Ranit Mukherjee", role: "Principal Investigator", status: pi, bio: "You can take a look at my past works here:", link: "https://ranit-mukherjee.github.io" }
 - { id: s1, name: "Student One", role: "PhD student", status: current, bio: "Works on freezing in granular channels." }
 - { id: s2, name: "Student Two", role: "PhD student", status: current, bio: "Works on acoustic levitation of liquid marbles." }
 - { id: a1, name: "Former Member", role: "PhD 2024", status: alumni, now: "Postdoc at Example University" }
