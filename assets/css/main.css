@@ -78,6 +78,6 @@ figcaption{font-size:.85rem;color:var(--mute);margin-top:8px}
   .hero,.three,.tri{grid-template-columns:1fr}.nrow,.nrow:has(.nimg),.gr{grid-template-columns:1fr;gap:8px}
   footer .wrap{grid-template-columns:1fr}footer .r{text-align:left}
 }
-.tri figure{min-width:0}
-.tri .ph,.tri img,.tri video{height:auto;aspect-ratio:4/3}
-.block{display:flow-root}
+.progress{display:flow-root;position:relative;z-index:2;background:var(--bg)}
+.prose img,.prose video{max-width:100%;height:auto;float:none}
+.prose h2{font-size:2rem;margin-top:1.4em}

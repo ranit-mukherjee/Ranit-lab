@@ -14,6 +14,6 @@ physics: "How does a freezing front advance through connected channels, and wher
 grants: [agency-a]
 members: [pi, s1]
 ---
-## What we are learning
 
-Replace this with your findings. Plain Markdown works: headings, lists, links, and images such as `![caption](/images/figure1.png)`.
+
+#Replace this with your findings. Plain Markdown works: headings, lists, links, and images such as `![caption](/images/figure1.png)`.
