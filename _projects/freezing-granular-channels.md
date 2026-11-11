@@ -1,15 +1,15 @@
 ---
-title: Freezing in granular channels
+title: Freezing in a water-saturated granular packing
 status: ongoing
-year: 2025
-tagline: A proxy for how freezing and stress move through interconnected channels, as in multi-level tissue freezing.
+year: 2027
+tagline: A proxy to visualize and understand freezing dynamics in interconnected porous channels, as in tissue freezing or freeze-thaw in soil.
 cover: ""
 nature_media: ""
-nature_caption: "Tissue freezing through interconnected levels of channels."
+nature_caption: "While single cell freezing is a reality for preservation, tissues are complex entities that do not survive traditional cryofreezing. We are reimagining them as a three-dimensional porous structure with water in the interstitial spaces."
 analog_media: ""
-analog_caption: "A granular packing forms an interconnected channel network we can freeze and watch."
+analog_caption: "A quasi-3D granular packing forms an interconnected channel network we can freeze, record, and measure temperature along the path. The experiments will combine ideas from freezing studies and poromechanics."
 physics_media: ""
-physics_caption: "Freezing front and stress in a connected pore network."
+physics_caption: "How the freezing front progresses within the channel, and how stress pattern is developed."
 physics: "How does a freezing front advance through connected channels, and where does stress build up?"
 grants: [agency-a]
 members: [pi, s1]
