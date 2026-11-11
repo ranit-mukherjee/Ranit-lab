@@ -1,5 +1,5 @@
 ---
-title: Freezing in a water-saturated granular packing
+title: Freezing in water-saturated granular packings
 status: ongoing
 year: 2027
 tagline: A proxy to visualize and understand freezing dynamics in interconnected porous channels, as in tissue freezing or freeze-thaw in soil.
