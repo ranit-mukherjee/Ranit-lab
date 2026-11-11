@@ -31,7 +31,7 @@ footer .slogan{font:400 2.8rem/1 var(--cond);color:#fff;text-transform:uppercase
 img,video{display:block;max-width:100%;filter:grayscale(1);transition:filter .3s}
 img:hover,video:hover,.tile:hover img,.tile:hover video{filter:none}
 @media(hover:none){img,video{filter:none}}
-.ph{display:grid;place-items:center;background:var(--soft);color:#8a8a8a;font-size:.9rem;min-height:100%;text-align:center;padding:12px}
+.ph{display:grid;place-items:center;background:var(--soft);color:#8a8a8a;font-size:.9rem;text-align:center;padding:12px}
 /* shared */
 .btn{display:inline-block;background:var(--ink);color:#fff;font:400 1.5rem/1 var(--cond);letter-spacing:.05em;text-transform:uppercase;padding:12px 30px;border-radius:6px;text-decoration:none;margin:0 10px 10px 0;border:2px solid var(--ink)}
 .btn.alt{background:transparent;color:var(--ink)}.btn.light{background:#fff;color:var(--ink);border-color:#fff}
@@ -78,3 +78,6 @@ figcaption{font-size:.85rem;color:var(--mute);margin-top:8px}
   .hero,.three,.tri{grid-template-columns:1fr}.nrow,.nrow:has(.nimg),.gr{grid-template-columns:1fr;gap:8px}
   footer .wrap{grid-template-columns:1fr}footer .r{text-align:left}
 }
+.tri figure{min-width:0}
+.tri .ph,.tri img,.tri video{height:auto;aspect-ratio:4/3}
+.block{display:flow-root}
