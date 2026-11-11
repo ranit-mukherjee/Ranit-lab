@@ -14,6 +14,5 @@ physics: "How does a floating, particle-coated droplet change shape and structur
 grants: [agency-b]
 members: [pi, s2]
 ---
-## First step
 
 We float marbles to avoid solid surfaces, then use sound to watch how their structure and shape change. Replace this with your results.
