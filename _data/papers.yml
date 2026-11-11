@@ -1,37 +1,37 @@
 # grants: grant ids.  projects: project file names (no .md).  Keep the spacing as shown.
-- #year: 2026
-  #title: "First Paper from the Lab"
-  #authors: "You, You, You, and Me"
-  #venue: "ACS Nano"
-  #link: "https://doi.org/"
-  #grants: [agency-a]
-  #projects: [mimic-natural-events]
+- year: 2027
+  title: "First Paper from the Lab"
+  authors: "You, You, You, and Me"
+  venue: "Journal"
+  link: "https://doi.org/"
+  grants: [agency-a]
+  projects: [freezing-granular-channels]
+- year: 2027
+  title: "Another Paper from the Lab"
+  authors: "You, You, You, and Me"
+  venue: "Journal"
+  link: "https://doi.org/"
+  grants: [agency-b]
+  projects: [liquid-marble-bioreactors]
 - year: 2026
   title: "Pattern formation in rectilinear flows of noncolloidal suspensions"
   authors: "Parham Poureslami, Ranit Mukherjee, and Sungyon Lee"
   venue: "Physical Review Fluids"
   link: "https://doi.org/10.1103/tgvb-bh1n"
-  grants: [agency-b]
-  projects: [particle-fluid-interactions]
 - year: 2025
   title: "Microscopic contact line dynamics dictate the emergent behaviors of particle rafts"
   authors: "Ranit Mukherjee, Zih-Yin Chen, Xiang Cheng, and Sungyon Lee"
   venue: "Physical Review Fluids"
   link: "https://doi.org/10.1103/ld9n-ctdh"
-  grants: [agency-a]
-  projects: [soft-granular-systems]
 - year: 2021
   title: "Synergistic dispersal of plant pathogen spores by jumping-droplet condensation and wind"
   authors: "Ranit Mukherjee, Hope Gruszewski, Landon Bilyeu, David Schmale III, and Jonathan Boreyko"
   venue: "PNAS"
   link: "https://doi.org/10.1073/pnas.2106938118"
-  grants: [agency-a]
-  projects: [mimic-natural-events]
 - year: 2021
   title: "Electrostatic jumping of frost"
   authors: "Ranit Mukherjee,  S. Farzad Ahmadi,  Hongwei Zhang,  Rui Qiao, and  Jonathan B. Boreyko"
   venue: "ACS Nano"
   link: "https://doi.org/10.1021/acsnano.0c09153"
-  grants: [agency-a]
-  projects: [mimic-natural-events]
+  
 
