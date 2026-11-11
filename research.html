@@ -4,8 +4,8 @@ title: Research
 permalink: /research/
 ---
 <div class="wrap block"><h1>Research</h1>
-<p class="sub">Each project follows one pattern: a soft system (biological, ecological, or engineered), our engineered analog, and the essential physics.</p>
-<h2 class="gap">Ongoing</h2>{% include tiles.html status="ongoing" %}
+<!--<p class="sub">Each project follows one pattern: a soft system (biological, ecological, or artificial), our engineered analog experiments, and the essential physics.</p>-->
+<h2 class="gap">Research Direction</h2>{% include tiles.html status="ongoing" %}
 {% assign past = site.projects | where: "status", "past" %}{% if past.size > 0 %}<h2 class="gap">Past</h2>{% include tiles.html status="past" %}{% endif %}
 <h2 class="gap" id="funding">Funding</h2>
 {% for g in site.data.grants %}
